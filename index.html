@@ -5,9 +5,12 @@
 <body>
 
   <?php
+    echo "Connect<br>";
     $server = mysql_connect("192.168.28.132","admin", "admin");
-    echo '<p>test connection</p>'
-<!--    $query = mysql_query("SELECT * FROM kla_w32_processes.products");  -->
+    echo "<b>succes</b><br>"
+    echo "Query<br>";
+    $query = mysql_query("SELECT * FROM kla_w32_processes.products;");
+    echo "<b>succes</b><br>";
   ?>
 
   <h1>TEST</h1>
@@ -24,6 +27,12 @@
       <td>cel 2</td>
       <td>cel 3</td>
       <td>cel 4</td>
+    </tr>
+    <tr>
+      <td>cel 5</td>
+      <td>cel 6</td>
+      <td>cel 7</td>
+      <td>cel 8</td>
     </tr>
   </table>
   
