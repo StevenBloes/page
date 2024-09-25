@@ -9,7 +9,8 @@
     $server = mysql_connect("192.168.28.132","admin", "admin");
     echo "<b>succes</b><br>";
     echo "Query<br>";
-    $query = mysql_query("SELECT * FROM kla_w32_processes.products;");
+    $db =  mysql_select_db("kla_w32_processes",$server);
+    $query = mysql_query("SELECT * FROM products;");
     echo "<b>succes</b><br>";
   ?>
 
